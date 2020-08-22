@@ -1,0 +1,156 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+
+
+}
+.pojemnik 
+{
+    width:230px;
+    height: 320px;
+    border-radius: 5px;
+    display: flex;
+    /* border: 1px solid rgb(82, 82, 82); */
+    flex-direction: column;
+
+}
+.divtop 
+{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(136, 135, 135, 0.87);
+  border-radius: 5px 5px 0 0;
+}
+.top 
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 80px;
+    margin-left: -10px;
+    font-size: 40px;
+    color: white;
+
+}
+.przyciski
+{
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100% - 80px);
+    
+   
+    text-align: center;
+    
+    
+}
+.button 
+{
+    width: 25%;
+    height: 20%;
+    background-color: #ebe9e9;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(82, 82, 82);
+
+}
+
+.button:nth-child(5):hover,.button:nth-child(6):hover,.button:nth-child(7):hover,.button:nth-child(9):hover,.button:nth-child(10):hover,.button:nth-child(11):hover,.button:nth-child(13):hover,.button:nth-child(14):hover,.button:nth-child(15):hover,.button:nth-child(17):hover,.button:nth-child(18):hover
+{
+    background-color: #dad8d8;
+    cursor: pointer;
+}
+
+
+
+
+
+.button:nth-child(1),.button:nth-child(2),.button:nth-child(3)
+{
+    background-color: #ddd;
+}
+.button:nth-child(4),.button:nth-child(8),.button:nth-child(12),.button:nth-child(16),.button:nth-child(19)
+{
+    background-color: rgb(240, 150, 47);
+    border-left: 1px solid rgb(82, 82, 82);
+
+    color: white;
+}
+
+
+.button:nth-child(1):hover,.button:nth-child(2):hover,.button:nth-child(3):hover
+{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.button:nth-child(4):hover,.button:nth-child(8):hover,.button:nth-child(12):hover,.button:nth-child(16):hover,.button:nth-child(19):hover
+{
+    background-color: #e0851e;
+    color: white;
+    cursor: pointer;
+
+}
+
+.button:nth-child(17)
+{
+    border-radius: 0 0 0 5px;
+    border-right: 1px solid rgb(82, 82, 82);
+}
+.button:nth-child(19)
+{
+    border-radius: 0 0 5px 0px;
+    border-left: 1px solid rgb(82, 82, 82);
+
+
+}
+
+
+
+
+
+.button:nth-last-child(3)
+{
+    flex: 1.99;
+    width: 50%;
+
+    
+}
+.button:nth-last-child(2)
+{
+    flex: 1
+}
+.button:nth-last-child(1)
+{
+    flex: 0.985;
+}
+
+.button:nth-child(1),
+.button:nth-child(5),
+.button:nth-child(9),
+.button:nth-child(13)
+{
+    border-right: 1px solid rgb(82, 82, 82);
+}
+.button:nth-child(2),
+.button:nth-child(6),
+.button:nth-child(10),
+.button:nth-child(14)
+{
+    border-right: 1px solid rgb(82, 82, 82);
+}
