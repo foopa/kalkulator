@@ -12,6 +12,7 @@ body
     align-items: center;
     font-size: 30px;
     font-family: 'Lato', sans-serif;
+    font-weight: 100;
 
 
 }
@@ -158,6 +159,12 @@ body
 
 @media (orientation: portrait)
 {
+    body 
+    {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+
+    }
     .pojemnik 
     {
 
