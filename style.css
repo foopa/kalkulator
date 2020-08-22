@@ -10,14 +10,14 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 30px;
     font-family: 'Lato', sans-serif;
 
 
 }
 .pojemnik 
 {
-    width:230px;
+    width:231px;
     height: 320px;
     border-radius: 5px;
     display: flex;
@@ -70,7 +70,7 @@ body
     border-top: 1px solid rgb(82, 82, 82);
 
 }
-
+/* cyfry */
 .button:nth-child(5):hover,.button:nth-child(6):hover,.button:nth-child(7):hover,.button:nth-child(9):hover,.button:nth-child(10):hover,.button:nth-child(11):hover,.button:nth-child(13):hover,.button:nth-child(14):hover,.button:nth-child(15):hover,.button:nth-child(17):hover,.button:nth-child(18):hover
 {
     background-color: #dad8d8;
@@ -85,9 +85,10 @@ body
 {
     background-color: #ddd;
 }
+/* funkcje */
 .button:nth-child(4),.button:nth-child(8),.button:nth-child(12),.button:nth-child(16),.button:nth-child(19)
 {
-    background-color: rgb(240, 150, 47);
+    background-color: #f79231;
     border-left: 1px solid rgb(82, 82, 82);
 
     color: white;
