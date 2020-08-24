@@ -16,13 +16,12 @@ body
 
 
 }
-.pojemnik 
+.container 
 {
     width:231px;
     height: 320px;
     border-radius: 5px;
     display: flex;
-    /* border: 1px solid rgb(82, 82, 82); */
     flex-direction: column;
 
 }
@@ -30,8 +29,11 @@ body
 {
   display: flex;
   flex-direction: column;
-  background-color: rgba(136, 135, 135, 0.87);
+  background-color: rgb(136, 135, 135);
   border-radius: 5px 5px 0 0;
+  position: relative;
+  box-sizing: border-box;
+
 }
 .top 
 {
@@ -43,11 +45,27 @@ body
     margin-left: -10px;
     font-size: 40px;
     color: white;
+    
 
 }
-.przyciski
+input[type=text]
 {
-    /* background-color: aliceblue; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 28px;
+    outline: none;
+    border-style: none;
+    transform: translate(-50%,-50%);
+    background-color: rgba(136, 135, 135, 0.87);
+    color: white;
+    width: 90%;
+    height: 40px;
+    line-height: 80px;
+}
+
+.buttons
+{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -59,65 +77,87 @@ body
     
     
 }
-.button 
+input[type=button]
 {
     width: 25%;
     height: 20%;
     background-color: #ebe9e9;
     box-sizing: border-box;
+    border-style: none;
+    font-size: 16px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     border-top: 1px solid rgb(82, 82, 82);
 
 }
-/* cyfry */
-.button:nth-child(5):hover,.button:nth-child(6):hover,.button:nth-child(7):hover,.button:nth-child(9):hover,.button:nth-child(10):hover,.button:nth-child(11):hover,.button:nth-child(13):hover,.button:nth-child(14):hover,.button:nth-child(15):hover,.button:nth-child(17):hover,.button:nth-child(18):hover
+/* </focus> */
+input[type=button]:focus
 {
-    background-color: #dad8d8;
-    cursor: pointer;
+    outline: none;
+   animation: .2s linear buttonanim;
 }
+input[type=button]:nth-child(1):focus,input[type=button]:nth-child(2):focus,input[type=button]:nth-child(3):focus
+{
+    outline: none;
+    animation: .2s linear buttonanim2;
+
+}
+input[type=button]:nth-child(4):focus,input[type=button]:nth-child(8):focus,input[type=button]:nth-child(12):focus,input[type=button]:nth-child(16):focus,input[type=button]:nth-child(19):focus
+{
+    utline: none;
+    animation: .2s linear buttonanim3;
+}
+/* </focus> */
 
 
 
 
 
-.button:nth-child(1),.button:nth-child(2),.button:nth-child(3)
+
+
+input[type=button]:nth-child(1),input[type=button]:nth-child(2),input[type=button]:nth-child(3)
 {
     background-color: #ddd;
 }
-/* funkcje */
-.button:nth-child(4),.button:nth-child(8),.button:nth-child(12),.button:nth-child(16),.button:nth-child(19)
+input[type=button]:nth-child(4),input[type=button]:nth-child(8),input[type=button]:nth-child(12),input[type=button]:nth-child(16),input[type=button]:nth-child(19)
 {
     background-color: #f79231;
     border-left: 1px solid rgb(82, 82, 82);
 
+
     color: white;
 }
 
 
-.button:nth-child(1):hover,.button:nth-child(2):hover,.button:nth-child(3):hover
+/* </hover> */
+input[type=button]:nth-child(1):hover,input[type=button]:nth-child(2):hover,input[type=button]:nth-child(3):hover
 {
-    background-color: #ccc;
     cursor: pointer;
 }
-.button:nth-child(4):hover,.button:nth-child(8):hover,.button:nth-child(12):hover,.button:nth-child(16):hover,.button:nth-child(19):hover
+input[type=button]:nth-child(4):hover,input[type=button]:nth-child(8):hover,input[type=button]:nth-child(12):hover,input[type=button]:nth-child(16):hover,input[type=button]:nth-child(19):hover
 {
-    background-color: #e0851e;
     color: white;
     cursor: pointer;
 
 }
+input[type=button]:nth-child(5):hover,input[type=button]:nth-child(6):hover,input[type=button]:nth-child(7):hover,input[type=button]:nth-child(9):hover,input[type=button]:nth-child(10):hover,input[type=button]:nth-child(11):hover,input[type=button]:nth-child(13):hover,input[type=button]:nth-child(14):hover,input[type=button]:nth-child(15):hover,input[type=button]:nth-child(17):hover,input[type=button]:nth-child(18):hover
+{
+    cursor: pointer;
+}
+/* </hover> */
 
-.button:nth-child(17)
+
+
+input[type=button]:nth-child(17)
 {
     border-radius: 0 0 0 5px;
     border-right: 1px solid rgb(82, 82, 82);
 }
-.button:nth-child(19)
+input[type=button]:nth-child(19)
 {
     border-radius: 0 0 5px 0px;
-    border-left: 1px solid rgb(82, 82, 82);
 
 
 }
@@ -125,58 +165,83 @@ body
 
 
 
-
-.button:nth-last-child(3)
+input[type=button]:nth-last-child(3)
 {
     flex: 1.99;
     width: 50%;
 
     
 }
-.button:nth-last-child(2)
+input[type=button]:nth-last-child(2)
 {
     flex: 1
 }
-.button:nth-last-child(1)
+.input[type=button]:nth-last-child(1)
 {
     flex: 0.985;
 }
 
-.button:nth-child(1),
-.button:nth-child(5),
-.button:nth-child(9),
-.button:nth-child(13)
+input[type=button]:nth-child(1),
+input[type=button]:nth-child(5),
+input[type=button]:nth-child(9),
+input[type=button]:nth-child(13)
 {
     border-right: 1px solid rgb(82, 82, 82);
 }
-.button:nth-child(2),
-.button:nth-child(6),
-.button:nth-child(10),
-.button:nth-child(14)
+input[type=button]:nth-child(2),
+input[type=button]:nth-child(6),
+input[type=button]:nth-child(10),
+input[type=button]:nth-child(14)
 {
     border-right: 1px solid rgb(82, 82, 82);
 }
 
-/* @media (orientation: portrait)
+
+
+
+
+
+@keyframes buttonanim
 {
-    body 
+    0%
     {
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
+        background-color: #ebe9e9;
 
     }
-    .pojemnik 
+
+    100%
+    {
+        background-color: #dad8d8;
+
+    }
+}
+@keyframes buttonanim2
+{
+    0%
     {
 
-        width:100%;
-       
-
-
-       height: 100%;
     }
-    .top 
+
+    100%
     {
-        height: 20vh;
-        line-height: 20vh;
+        background-color: #ccc;
+
     }
-} */
+
+    
+}
+@keyframes buttonanim3
+{
+    0%
+    {
+
+    }
+
+    100%
+    {
+        background-color: #e0851e;
+
+    }
+
+    
+}
