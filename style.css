@@ -13,8 +13,6 @@ body
     font-size: 30px;
     font-family: 'Lato', sans-serif;
     font-weight: 100;
-
-
 }
 .container 
 {
@@ -29,7 +27,7 @@ body
 {
   display: flex;
   flex-direction: column;
-  background-color: rgb(136, 135, 135);
+  background-color: rgba(0, 0, 0, 0.418);
   border-radius: 5px 5px 0 0;
   position: relative;
   box-sizing: border-box;
@@ -53,11 +51,11 @@ input[type=text]
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 28px;
+    font-size: 32px;
     outline: none;
     border-style: none;
     transform: translate(-50%,-50%);
-    background-color: rgba(136, 135, 135, 0.87);
+    background-color: rgba(136, 135, 135, 0);
     width: 90%;
     height: 40px;
     line-height: 80px;
@@ -90,7 +88,7 @@ input[type=button]
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid rgb(82, 82, 82);
+    border-top: 1px solid rgba(0, 0, 0, 0.404);
 
 }
 /* </focus> */
@@ -125,7 +123,7 @@ input[type=button]:nth-child(1),input[type=button]:nth-child(2),input[type=butto
 input[type=button]:nth-child(4),input[type=button]:nth-child(8),input[type=button]:nth-child(12),input[type=button]:nth-child(16),input[type=button]:nth-child(19)
 {
     background-color: #f79231;
-    border-left: 1px solid rgb(82, 82, 82);
+    border-left: 1px solid rgba(0, 0, 0, 0.404);
 
 
     color: white;
@@ -154,7 +152,7 @@ input[type=button]:nth-child(5):hover,input[type=button]:nth-child(6):hover,inpu
 input[type=button]:nth-child(17)
 {
     border-radius: 0 0 0 5px;
-    border-right: 1px solid rgb(82, 82, 82);
+    border-right: 1px solid rgba(0, 0, 0, 0.404);
 }
 input[type=button]:nth-child(19)
 {
@@ -187,14 +185,14 @@ input[type=button]:nth-child(5),
 input[type=button]:nth-child(9),
 input[type=button]:nth-child(13)
 {
-    border-right: 1px solid rgb(82, 82, 82);
+    border-right: 1px solid rgba(0, 0, 0, 0.404);
 }
 input[type=button]:nth-child(2),
 input[type=button]:nth-child(6),
 input[type=button]:nth-child(10),
 input[type=button]:nth-child(14)
 {
-    border-right: 1px solid rgb(82, 82, 82);
+    border-right: 1px solid rgba(0, 0, 0, 0.404);
 }
 
 
