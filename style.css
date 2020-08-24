@@ -1,293 +1,310 @@
-*
-{
-    margin: 0;
-    padding: 0;
-}
-body 
-{
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    font-weight: 100;
-}
-.container 
-{
-    width:231px;
-    height: 320px;
-    border-radius: 5px;
+#mydiv {
+    position: absolute;
+    z-index: 9;
+  }
+  
+  #mydivheader {
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+  }
+  
+  
+  
+  
+  *
+  {
+      margin: 0;
+      padding: 0;
+  }
+  body 
+  {
+      font-family: 'Roboto', sans-serif;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(#e66465, #9198e5);
+      font-weight: 100;
+  }
+  #mydiv 
+  {
+      width:231px;
+      height: 320px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+     
+  
+  }
+  #mydivheader 
+  {
     display: flex;
     flex-direction: column;
-
-}
-.divtop 
-{
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.418);
-  border-radius: 5px 5px 0 0;
-  position: relative;
-  box-sizing: border-box;
-
-}
-.top 
-{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: flex-end;
-    line-height: 80px;
-    margin-left: -10px;
-    font-size: 40px;
-    color: white;
-
-    
-
-}
-
-input[type=text]::placeholder
-{
-    color: white;
-}
-input[type=text]
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size:40px;
-    outline: none;
-    border-style: none;
-    transform: translate(-50%,-50%);
-    background-color: rgba(0, 0, 0, 0);
-    width: 90%;
-    height: 60px;
-    line-height: 80px;
-    color: transparent;
-    text-shadow: 0 0 0 white;
-    text-align: right;   
-    vertical-align: baseline;
-    font-family: 'Roboto', sans-serif;
-
-    
-
-    
-
-
-
-
-}
-
-.buttons
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    height: calc(100% - 80px);
-    
-    text-align: center;
-    
-    
-}
-input[type=button]
-{
-    width: 25%;
-    height: 20%;
-    background-color: #ebe9e9;
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 5px 5px 0 0;
+    position: relative;
     box-sizing: border-box;
-    border-style: none;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.404);
-
-}
-/* </focus> */
-input[type=button]:focus
-{
-    outline: none;
-   animation: .2s linear buttonanim;
-}
-input[type=button]:nth-child(1):focus,input[type=button]:nth-child(2):focus,input[type=button]:nth-child(3):focus
-{
-    outline: none;
-    animation: .2s linear buttonanim2;
-
-}
-input[type=button]:nth-child(4):focus,input[type=button]:nth-child(8):focus,input[type=button]:nth-child(12):focus,input[type=button]:nth-child(16):focus,input[type=button]:nth-child(19):focus
-{
-    utline: none;
-    animation: .2s linear buttonanim3;
-}
-/* </focus> */
-
-
-
-
-
-
-
-input[type=button]:nth-child(1),input[type=button]:nth-child(2),input[type=button]:nth-child(3)
-{
-    background-color: #ddd;
-}
-input[type=button]:nth-child(4),input[type=button]:nth-child(8),input[type=button]:nth-child(12),input[type=button]:nth-child(16),input[type=button]:nth-child(19)
-{
-    background-color: #f79231;
-    border-left: 1px solid rgba(0, 0, 0, 0.404);
-
-
-    color: white;
-}
-
-
-/* </hover> */
-input[type=button]:nth-child(1):hover,input[type=button]:nth-child(2):hover,input[type=button]:nth-child(3):hover
-{
-    cursor: pointer;
-}
-input[type=button]:nth-child(4):hover,input[type=button]:nth-child(8):hover,input[type=button]:nth-child(12):hover,input[type=button]:nth-child(16):hover,input[type=button]:nth-child(19):hover
-{
-    color: white;
-    cursor: pointer;
-
-}
-input[type=button]:nth-child(5):hover,input[type=button]:nth-child(6):hover,input[type=button]:nth-child(7):hover,input[type=button]:nth-child(9):hover,input[type=button]:nth-child(10):hover,input[type=button]:nth-child(11):hover,input[type=button]:nth-child(13):hover,input[type=button]:nth-child(14):hover,input[type=button]:nth-child(15):hover,input[type=button]:nth-child(17):hover,input[type=button]:nth-child(18):hover
-{
-    cursor: pointer;
-}
-/* </hover> */
-
-
-
-input[type=button]:nth-child(17)
-{
-    border-radius: 0 0 0 5px;
-    border-right: 1px solid rgba(0, 0, 0, 0.404);
     
-}
-input[type=button]:nth-child(19)
-{
-    border-radius: 0 0 5px 0px;
-
-
-}
-
-
-
-
-input[type=button]:nth-last-child(3)
-{
-    flex: 1.99;
-    width: 50%;
-
-    
-}
-input[type=button]:nth-last-child(2)
-{
-    flex: 1
-}
-.input[type=button]:nth-last-child(1)
-{
-    flex: 0.985;
-}
-
-input[type=button]:nth-child(1),
-input[type=button]:nth-child(5),
-input[type=button]:nth-child(9),
-input[type=button]:nth-child(13)
-{
-    border-right: 1px solid rgba(0, 0, 0, 0.404);
-}
-input[type=button]:nth-child(2),
-input[type=button]:nth-child(6),
-input[type=button]:nth-child(10),
-input[type=button]:nth-child(14)
-{
-    border-right: 1px solid rgba(0, 0, 0, 0.404);
-}
-
-/* input[type=button]:nth-child(4)
-{
-    font-size: 30px;
-} */
-
-
-
-
-
-@keyframes buttonanim
-{
-    0%
-    {
-        background-color: #ebe9e9;
-
-    }
-
-    100%
-    {
-        background-color: #dad8d8;
-
-    }
-}
-@keyframes buttonanim2
-{
-    0%
-    {
-
-    }
-
-    100%
-    {
-        background-color: #ccc;
-
-    }
-
-    
-}
-@keyframes buttonanim3
-{
-    0%
-    {
-
-    }
-
-    100%
-    {
-        background-color: #e0851e;
-
-    }
-
-    
-}
-
-@media (orientation: portrait)
-{
-    .container 
-{
-    width: calc(231px * 1.5);
-    height: calc(320px * 1.5);
-}
-.top 
-{
-    height: calc(80px * 1.5);
-}
-}
-@media (max-width:600px)
-{
-    .container 
-{
-    width: calc(231px * 1.2);
-    height: calc(320px * 1.2);
-}
-.top 
-{
-    height: calc(80px * 1.2);
-}
-}
+  
+  }
+  .top 
+  {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: flex-end;
+      line-height: 80px;
+      margin-left: -10px;
+      font-size: 40px;
+      color: white;
+  
+      
+  
+  }
+  
+  input[type=text]::placeholder
+  {
+      color: white;
+  }
+  input[type=text]
+  {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size:40px;
+      outline: none;
+      border-style: none;
+      transform: translate(-50%,-50%);
+      background-color: rgba(0, 0, 0, 0);
+      width: 90%;
+      height: 60px;
+      line-height: 80px;
+      color: transparent;
+      text-shadow: 0 0 0 white;
+      text-align: right;   
+      vertical-align: baseline;
+      font-family: 'Roboto', sans-serif;
+  
+      
+  
+      
+  
+  
+  
+  
+  }
+  
+  .buttons
+  {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      height: calc(100% - 80px);
+      
+      text-align: center;
+      
+      
+  }
+  input[type=button]
+  {
+      width: 25%;
+      height: 20%;
+      background-color: #ebe9e9;
+      box-sizing: border-box;
+      border-style: none;
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid rgba(0, 0, 0, 0.404);
+  
+  }
+  /* </focus> */
+  input[type=button]:focus
+  {
+      outline: none;
+     animation: .2s linear buttonanim;
+  }
+  input[type=button]:nth-child(1):focus,input[type=button]:nth-child(2):focus,input[type=button]:nth-child(3):focus
+  {
+      outline: none;
+      animation: .2s linear buttonanim2;
+  
+  }
+  input[type=button]:nth-child(4):focus,input[type=button]:nth-child(8):focus,input[type=button]:nth-child(12):focus,input[type=button]:nth-child(16):focus,input[type=button]:nth-child(19):focus
+  {
+      utline: none;
+      animation: .2s linear buttonanim3;
+  }
+  /* </focus> */
+  
+  
+  
+  
+  
+  
+  
+  input[type=button]:nth-child(1),input[type=button]:nth-child(2),input[type=button]:nth-child(3)
+  {
+      background-color: #ddd;
+  }
+  input[type=button]:nth-child(4),input[type=button]:nth-child(8),input[type=button]:nth-child(12),input[type=button]:nth-child(16),input[type=button]:nth-child(19)
+  {
+      background-color: #f79231;
+      border-left: 1px solid rgba(0, 0, 0, 0.404);
+  
+      
+      color: white;
+  }
+  
+  
+  /* </hover> */
+  input[type=button]:nth-child(1):hover,input[type=button]:nth-child(2):hover,input[type=button]:nth-child(3):hover
+  {
+      cursor: pointer;
+  }
+  input[type=button]:nth-child(4):hover,input[type=button]:nth-child(8):hover,input[type=button]:nth-child(12):hover,input[type=button]:nth-child(16):hover,input[type=button]:nth-child(19):hover
+  {
+      color: white;
+      cursor: pointer;
+  
+  }
+  input[type=button]:nth-child(5):hover,input[type=button]:nth-child(6):hover,input[type=button]:nth-child(7):hover,input[type=button]:nth-child(9):hover,input[type=button]:nth-child(10):hover,input[type=button]:nth-child(11):hover,input[type=button]:nth-child(13):hover,input[type=button]:nth-child(14):hover,input[type=button]:nth-child(15):hover,input[type=button]:nth-child(17):hover,input[type=button]:nth-child(18):hover
+  {
+      cursor: pointer;
+  }
+  /* </hover> */
+  
+  
+  
+  input[type=button]:nth-child(17)
+  {
+      border-radius: 0 0 0 5px;
+      border-right: 1px solid rgba(0, 0, 0, 0.404);
+      
+  }
+  input[type=button]:nth-child(19)
+  {
+      border-radius: 0 0 5px 0px;
+  
+  
+  }
+  
+  
+  
+  
+  input[type=button]:nth-last-child(3)
+  {
+      flex: 1.99;
+      width: 50%;
+  
+      
+  }
+  input[type=button]:nth-last-child(2)
+  {
+      flex: 1
+  }
+  .input[type=button]:nth-last-child(1)
+  {
+      flex: 0.985;
+  }
+  
+  input[type=button]:nth-child(1),
+  input[type=button]:nth-child(5),
+  input[type=button]:nth-child(9),
+  input[type=button]:nth-child(13)
+  {
+      border-right: 1px solid rgba(0, 0, 0, 0.404);
+  }
+  input[type=button]:nth-child(2),
+  input[type=button]:nth-child(6),
+  input[type=button]:nth-child(10),
+  input[type=button]:nth-child(14)
+  {
+      border-right: 1px solid rgba(0, 0, 0, 0.404);
+  }
+  
+  /* input[type=button]:nth-child(4)
+  {
+      font-size: 30px;
+  } */
+  
+  
+  
+  
+  
+  @keyframes buttonanim
+  {
+      0%
+      {
+          background-color: #ebe9e9;
+  
+      }
+  
+      100%
+      {
+          background-color: #dad8d8;
+  
+      }
+  }
+  @keyframes buttonanim2
+  {
+      0%
+      {
+  
+      }
+  
+      100%
+      {
+          background-color: #ccc;
+  
+      }
+  
+      
+  }
+  @keyframes buttonanim3
+  {
+      0%
+      {
+  
+      }
+  
+      100%
+      {
+          background-color: #e0851e;
+  
+      }
+  
+      
+  }
+  
+  @media (orientation: portrait)
+  {
+      .container 
+  {
+      width: calc(231px * 1.5);
+      height: calc(320px * 1.5);
+  }
+  .top 
+  {
+      height: calc(80px * 1.5);
+  }
+  }
+  @media (max-width:600px)
+  {
+      .container 
+  {
+      width: calc(231px * 1.2);
+      height: calc(320px * 1.2);
+  }
+  .top 
+  {
+      height: calc(80px * 1.2);
+  }
+  }
