@@ -271,11 +271,23 @@ input[type=button]:nth-child(14)
 {
     .container 
 {
-    width: calc(231px * 2);
-    height: calc(320px * 2);
+    width: calc(231px * 1.5);
+    height: calc(320px * 1.5);
 }
 .top 
 {
-    height: calc(80px * 2);
+    height: calc(80px * 1.5);
+}
+}
+@media (max-width:600px)
+{
+    .container 
+{
+    width: calc(231px * 1.2);
+    height: calc(320px * 1.2);
+}
+.top 
+{
+    height: calc(80px * 1.2);
 }
 }
