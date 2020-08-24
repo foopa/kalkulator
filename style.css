@@ -5,13 +5,13 @@
 }
 body 
 {
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    font-family: 'Lato', sans-serif;
+    
     font-weight: 100;
 }
 .container 
@@ -43,6 +43,7 @@ body
     margin-left: -10px;
     font-size: 40px;
     color: white;
+
     
 
 }
@@ -51,17 +52,23 @@ input[type=text]
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 32px;
+    font-size:32px;
     outline: none;
     border-style: none;
     transform: translate(-50%,-50%);
-    background-color: rgba(136, 135, 135, 0);
+    background-color: rgba(0, 0, 0, 0);
     width: 90%;
-    height: 40px;
+    height: 60px;
     line-height: 80px;
     color: transparent;
     text-shadow: 0 0 0 white;
     text-align: right;   
+    vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
+
+    
+
+    
 
 
 
@@ -76,7 +83,6 @@ input[type=text]
     width: 100%;
     height: calc(100% - 80px);
     
-   
     text-align: center;
     
     
@@ -88,7 +94,8 @@ input[type=button]
     background-color: #ebe9e9;
     box-sizing: border-box;
     border-style: none;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 
     display: flex;
     justify-content: center;
@@ -158,6 +165,7 @@ input[type=button]:nth-child(17)
 {
     border-radius: 0 0 0 5px;
     border-right: 1px solid rgba(0, 0, 0, 0.404);
+    
 }
 input[type=button]:nth-child(19)
 {
@@ -200,6 +208,10 @@ input[type=button]:nth-child(14)
     border-right: 1px solid rgba(0, 0, 0, 0.404);
 }
 
+/* input[type=button]:nth-child(4)
+{
+    font-size: 30px;
+} */
 
 
 
