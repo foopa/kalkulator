@@ -58,10 +58,11 @@ input[type=text]
     border-style: none;
     transform: translate(-50%,-50%);
     background-color: rgba(136, 135, 135, 0.87);
-    color: white;
     width: 90%;
     height: 40px;
     line-height: 80px;
+    color: transparent;
+    text-shadow: 0 0 0 white;
 }
 
 .buttons
