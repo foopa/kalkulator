@@ -266,3 +266,16 @@ input[type=button]:nth-child(14)
 
     
 }
+
+@media (orientation: portrait)
+{
+    .container 
+{
+    width: calc(231px * 2);
+    height: calc(320px * 2);
+}
+.top 
+{
+    height: calc(80px * 2);
+}
+}
