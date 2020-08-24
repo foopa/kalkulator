@@ -61,6 +61,11 @@ input[type=text]
     line-height: 80px;
     color: transparent;
     text-shadow: 0 0 0 white;
+    text-align: right;   
+
+
+
+
 }
 
 .buttons
