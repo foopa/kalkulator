@@ -28,6 +28,7 @@
       align-items: center;
       background: linear-gradient(#e66465, #9198e5);
       font-weight: 100;
+      overflow: hidden;
   }
   #mydiv 
   {
