@@ -47,6 +47,11 @@ body
     
 
 }
+
+input[type=text]::placeholder
+{
+    color: white;
+}
 input[type=text]
 {
     position: absolute;
