@@ -18,7 +18,7 @@ document.querySelectorAll('.button').forEach(element => {
     })
 });
 
-document.querySelector('#del').addEventListener('click', e => {
+document.querySelector('#del').addEventListener('click', () => {
     document.getElementById('result').value = '';
 })
 
