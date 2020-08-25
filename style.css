@@ -30,15 +30,17 @@
       font-weight: 100;
       overflow: hidden;
   }
-  #mydiv 
+  #mydiv-2
   {
       width:231px;
       height: 320px;
+      min-width:231px;
+      min-height: 320px;
       border-radius: 5px;
       display: flex;
       flex-direction: column;
-     
-  
+      resize: both;
+      overflow: auto;
   }
   #mydivheader 
   {
