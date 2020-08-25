@@ -13,8 +13,9 @@
     <title>Calculator</title>
 </head>
 <body>
-    
+   <button class="icon">
 
+   </button>
 
     <div id="mydiv">
 
@@ -23,6 +24,7 @@
         <form name="cal" autocomplete="off">
           <div id="mydiv">
               <div id="mydivheader">
+                  <button class="buttonexit" type="button"><a>x</a></button>
            <div class="top">    
            <input type="text" placeholder="0" name="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" >
       
@@ -66,6 +68,31 @@
      
 
 <script src="drag.js"></script>
+<script>
+    let exit = document.querySelector('.buttonexit');
+    let calculator = document.querySelector('#mydiv');
+
+
+    exit.addEventListener('click',function()
+    {
+       calculator.style.display = "none";
+
+
+    }
+    )
+
+</script> 
+<script>
+        let opencalc = document.querySelector('.icon');
+        let calculatoropen = document.querySelector('#mydiv');
+
+        opencalc.addEventListener('dblclick',function()
+        {
+            calculatoropen.style.display = "block";
+        }
+        )
+
+</script>
     
 </body>
 </html>
