@@ -10,9 +10,6 @@
     color: #fff;
   }
   
-  
-  
-  
   *
   {
       margin: 0;
@@ -50,8 +47,6 @@
     border-radius: 5px 5px 0 0;
     position: relative;
     box-sizing: border-box;
-    
-  
   }
   .top 
   {
@@ -63,9 +58,6 @@
       margin-left: -10px;
       font-size: 40px;
       color: white;
-  
-      
-  
   }
   
   input[type=text]::placeholder
@@ -90,14 +82,6 @@
       text-align: right;   
       vertical-align: baseline;
       font-family: 'Roboto', sans-serif;
-  
-      
-  
-      
-  
-  
-  
-  
   }
   
   .buttons
@@ -112,8 +96,6 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-      
-      
   }
   input[type=button]
   {
@@ -129,7 +111,6 @@
       justify-content: center;
       align-items: center;
       border-top: 1px solid rgba(0, 0, 0, 0.404);
-  
   }
   /* </focus> */
   input[type=button]:focus
@@ -141,7 +122,6 @@
   {
       outline: none;
       animation: .2s linear buttonanim2;
-  
   }
   input[type=button]:nth-child(4):focus,input[type=button]:nth-child(8):focus,input[type=button]:nth-child(12):focus,input[type=button]:nth-child(16):focus,input[type=button]:nth-child(19):focus
   {
@@ -149,13 +129,7 @@
       animation: .2s linear buttonanim3;
   }
   /* </focus> */
-  
-  
-  
-  
-  
-  
-  
+
   input[type=button]:nth-child(1),input[type=button]:nth-child(2),input[type=button]:nth-child(3)
   {
       background-color: #ddd;
@@ -164,8 +138,6 @@
   {
       background-color: #f79231;
       border-left: 1px solid rgba(0, 0, 0, 0.404);
-  
-      
       color: white;
   }
   
@@ -179,7 +151,7 @@
   {
       color: white;
       cursor: pointer;
-  
+
   }
   input[type=button]:nth-child(5):hover,input[type=button]:nth-child(6):hover,input[type=button]:nth-child(7):hover,input[type=button]:nth-child(9):hover,input[type=button]:nth-child(10):hover,input[type=button]:nth-child(11):hover,input[type=button]:nth-child(13):hover,input[type=button]:nth-child(14):hover,input[type=button]:nth-child(15):hover,input[type=button]:nth-child(17):hover,input[type=button]:nth-child(18):hover
   {
@@ -187,19 +159,14 @@
   }
   /* </hover> */
   
-  
-  
   input[type=button]:nth-child(17)
   {
       border-radius: 0 0 0 5px;
       border-right: 1px solid rgba(0, 0, 0, 0.404);
-      
   }
   input[type=button]:nth-child(19)
   {
       border-radius: 0 0 5px 0px;
-  
-  
   }
   
   
@@ -209,8 +176,6 @@
   {
       flex: 1.99;
       width: 50%;
-  
-      
   }
   input[type=button]:nth-last-child(2)
   {
@@ -234,60 +199,6 @@
   input[type=button]:nth-child(14)
   {
       border-right: 1px solid rgba(0, 0, 0, 0.404);
-  }
-  
-  /* input[type=button]:nth-child(4)
-  {
-      font-size: 30px;
-  } */
-  
-  
-  
-  
-  
-  @keyframes buttonanim
-  {
-      0%
-      {
-          background-color: #ebe9e9;
-  
-      }
-  
-      100%
-      {
-          background-color: #dad8d8;
-  
-      }
-  }
-  @keyframes buttonanim2
-  {
-      0%
-      {
-  
-      }
-  
-      100%
-      {
-          background-color: #ccc;
-  
-      }
-  
-      
-  }
-  @keyframes buttonanim3
-  {
-      0%
-      {
-  
-      }
-  
-      100%
-      {
-          background-color: #e0851e;
-  
-      }
-  
-      
   }
   
   @media (orientation: portrait)
