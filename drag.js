@@ -29,8 +29,19 @@ function dragElement(elmnt) {
     pos3 = e.clientX;
     pos4 = e.clientY;
     // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    const clientPosEl = elmnt.getBoundingClientRect();
+
+    if (clientPosEl.top > 0 || pos2 < 0) {
+      if (clientPosEl.bottom < window.innerHeight || pos2 > 0) {
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      }
+    }
+
+    if (clientPosEl.left > 0 || pos1 < 0) {
+      if (clientPosEl.right < window.innerWidth || pos1 > 0) {
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+      }
+    }
   }
 
   function closeDragElement() {
