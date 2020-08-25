@@ -21,7 +21,7 @@
 
 
         <form name="cal" autocomplete="off">
-          <div id="mydiv">
+          <div id="mydiv-2">
               <div id="mydivheader">
            <div class="top">    
            <input type="text" placeholder="0" name="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" >
@@ -46,10 +46,10 @@
            <input type="button" value="2" onclick="cal.display.value+= '2'">
            <input type="button" value="3" onclick="cal.display.value+= '3'">
            <input type="button" value="+" onclick="cal.display.value+= '+'">
-           <input type="button" value="0            " onclick="cal.display.value+= '0'">
+           <button type="button" onclick="cal.display.value+= '0'"><span>0</span></button>
            <input type="button" value="." onclick="cal.display.value+= '.'">
            <input type="button" value="=" onclick="cal.display.value =eval(cal.display.value)">
-      
+
               </div>
           </div>
       </form>
