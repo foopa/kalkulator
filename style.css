@@ -91,8 +91,19 @@
       left: 20%;
       height: 64px;
       width: 64px;
-      background-color: #fff;
       border-style: none;
+      /* border: rgba(221, 221, 221, 0.274) solid 2px;
+      border-radius: 3px; */
+      background-color: transparent;
+      background-image: url(ikonka.png);
+      background-size: 100%;
+      outline: none;
+  }
+  .icon:focus
+  {
+    border: rgba(221, 221, 221, 0.274) solid 2px;
+    border-radius: 3px;
+    background-color: rgba(7, 7, 7, 0.144);
   }
 
   
@@ -147,6 +158,8 @@
       -moz-appearance: none;
       appearance: none;
   }
+
+    
   input[type=button]
   {
       width: 25%;
@@ -211,6 +224,7 @@
   
   input[type=button]:nth-child(17)
   {
+      /* cursor: pointer; */
       border-radius: 0 0 0 5px;
       border-right: 1px solid rgba(0, 0, 0, 0.404);
   }
@@ -219,8 +233,7 @@
       border-radius: 0 0 5px 0px;
   }
   
-  
-  
+
   
   input[type=button]:nth-last-child(3)
   {
@@ -328,3 +341,5 @@
       height: calc(80px * 1.2);
   }
   }
+
+  
