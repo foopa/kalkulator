@@ -13,8 +13,9 @@
     <title>Calculator</title>
 </head>
 <body>
-   <button class="icon">
-
+   <button class ="icon" >
+       <p>Calculator</p>
+       <div class="icon2"></div>
    </button>
 
     <div id="mydiv">
@@ -32,7 +33,7 @@
               </div>
       
               <div class="buttons">
-           <input type="button" value="C" id="del">
+           <input type="button" value="AC" id="del"> 
            <input type="button" value="(" class="button">
            <input type="button" value=")" class="button">
            <input type="button" value="÷" class="button operator">
@@ -49,7 +50,7 @@
            <input type="button" value="3" class="button">
            <input type="button" value="+" class="button operator">
            <button type="button" value="0" class="button"><span>0</span></button>
-           <input type="button" value=".">
+           <input type="button" value="." class="button operator">
            <input type="button" value="=" class="calculate">
 
               </div>
@@ -68,44 +69,59 @@
      
 
 <script src="drag.js"></script>
+<script src="dragicon.js"></script>
+
+<script src="exit.js"></script>
+<script src="open.js"></script>
+<script src="anim.js"></script>
+<script src="./calc.js"></script>
+
 <script>
-    let exit = document.querySelector('.buttonexit');
-    let calculator = document.querySelector('#mydiv');
+    let calcAC= document.querySelector('#mydiv');
+    let buttons = document.querySelector('.buttons');
+    let neinbuttons = document.querySelector('.button')
+    // let buttonAC = document.querySelector('input[type="button"]:nth-child(1)'     );
+    // let buttonAll = document.querySelector('input[type="button"]');
 
-
-    exit.addEventListener('click',function()
+    buttons.addEventListener('click', function()
     {
-       calculator.style.display = "none";
+        console.log("it works!");
+        // buttonAC.style.fontSize = ('15px')
+        document.getElementById("del").value = "C";
 
+
+     
+    }
+  
+    )
+    
+   
+    
+    
+    
+    
+    
+
+
+
+
+
+
+</script>
+
+<script>
+
+    let buttonAC = document.querySelector('input[type="button"]:nth-child(1)'     );
+    buttonAC.addEventListener('click',function()
+    {
+        console.log("hej,to działa");
+        document.getElementById("del").value = "AC";
 
     }
     )
 
-</script> 
-<script>
-        let opencalc = document.querySelector('.icon');
-
-        let calculatoropen = document.querySelector('#mydiv');
-
-        opencalc.addEventListener('dblclick',function()
-        {
-            calculatoropen.style.display = "block";
-        }
-        )
-        // opencalc.addEventListener('click',function()
-        // {
-            
-
-        //     opencalc.style.backgroundColor = "rgba(7, 7, 7, 0.144)";
-
-        //     opencalc.style.borderRadius = "3px";
-
-        // }
-        // )
-
-
 </script>
-    
-<script src="./calc.js"></script>
+
+
 </body>
 </html>

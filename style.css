@@ -1,6 +1,7 @@
 #mydiv {
     position: absolute;
     z-index: 9;
+    display: none;
   }
   
   #mydivheader {
@@ -83,14 +84,18 @@
   {
     display: block;
   }
+  .iconcont
+  {
+    position: absolute;
 
+  }
   .icon 
   {
       position: absolute;
       top: 20%;
       left: 20%;
-      height: 64px;
-      width: 64px;
+      height: 80px;
+      width: 80px;
       border-style: none;
       /* border: rgba(221, 221, 221, 0.274) solid 2px;
       border-radius: 3px; */
@@ -98,15 +103,72 @@
       background-image: url(ikonka.png);
       background-size: 100%;
       outline: none;
+      
+      
   }
+  .icon2
+  {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 80px;
+      width: 80px;
+      border-style: none;
+      background-color: transparent;
+      background-image: url(ikonka.png);
+      background-size: 100%;
+      outline: none;
+      /* background-color: #fff; */
+      transform: scale(1);
+  }
+
+   @keyframes iconanim 
+   {
+       0%
+       {
+           opacity: 1;
+       }
+       100%
+       {
+           transform: scale(2);
+           opacity: 0;
+       }
+   }
+  
+
+  
   .icon:focus
   {
-    border: rgba(221, 221, 221, 0.274) solid 2px;
+  
+    /* border: rgba(221, 221, 221, 0.274) solid 2px; */
     border-radius: 3px;
     background-color: rgba(7, 7, 7, 0.144);
   }
+ 
 
-  
+
+  .icon:focus p 
+  {
+   
+    border-radius: 3px;
+    width: 100%;
+    
+    background-color: rgba(7, 7, 7, 0.144);
+  }
+
+  .icon p
+  {
+      display: block;
+      position: absolute;
+     bottom: -30%;
+     color: white;
+     font-size: 12px;
+     text-align:center;
+     border-radius: 3px;
+     width: 100%;
+     background-color: transparent;
+  }
 
   .top 
   {
@@ -342,4 +404,7 @@
   }
   }
 
-  
+  input[type=button]:nth-child(1)
+  {
+
+  }
