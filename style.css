@@ -24,7 +24,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(#e66465, #9198e5);
+      /* background: linear-gradient(#e66465, #9198e5); */
+      background: linear-gradient(#3c3333, #747abb);
+
       font-weight: 100;
       overflow: hidden;
 
@@ -100,7 +102,7 @@
       /* border: rgba(221, 221, 221, 0.274) solid 2px;
       border-radius: 3px; */
       background-color: transparent;
-      background-image: url(ikonka.png);
+      background-image: url(2ver.png);
       background-size: 100%;
       outline: none;
       
@@ -116,7 +118,7 @@
       width: 80px;
       border-style: none;
       background-color: transparent;
-      background-image: url(ikonka.png);
+      background-image: url(2ver.png);
       background-size: 100%;
       outline: none;
       /* background-color: #fff; */
